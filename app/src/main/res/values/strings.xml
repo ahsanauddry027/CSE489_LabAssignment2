@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CSE489 Assignment 2</string>
+
+    <!-- Navigation drawer: labels and order are fixed by the assignment brief. -->
+    <string name="menu_broadcast">Broadcast Receiver</string>
+    <string name="menu_image_scale">Image Scale</string>
+    <string name="menu_video">Video</string>
+    <string name="menu_audio">Audio</string>
+
+    <string name="drawer_header_title">CSE 489 · Assignment 2</string>
+    <string name="drawer_header_subtitle">Mobile Application Development\nBRAC University</string>
+</resources>

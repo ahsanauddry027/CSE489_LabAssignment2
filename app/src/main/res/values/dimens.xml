@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing scale (multiples of 4dp, as in Material 3). -->
+    <dimen name="spacing_xsmall">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+
+    <!-- Accessibility: every touch target is at least 48dp. -->
+    <dimen name="touch_target_min">48dp</dimen>
+
+    <!-- Forms and text stay readable on wide screens (tablets, landscape). -->
+    <dimen name="content_max_width">560dp</dimen>
+</resources>

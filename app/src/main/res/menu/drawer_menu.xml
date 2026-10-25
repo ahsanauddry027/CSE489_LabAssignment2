@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Drawer items. Each item ID is the same as a destination ID in nav_graph.xml, which is how
+    NavigationUI knows which screen to open and which item to highlight.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/broadcastFragment"
+            android:title="@string/menu_broadcast" />
+        <item
+            android:id="@+id/imageScaleFragment"
+            android:title="@string/menu_image_scale" />
+        <item
+            android:id="@+id/videoFragment"
+            android:title="@string/menu_video" />
+        <item
+            android:id="@+id/audioFragment"
+            android:title="@string/menu_audio" />
+    </group>
+</menu>

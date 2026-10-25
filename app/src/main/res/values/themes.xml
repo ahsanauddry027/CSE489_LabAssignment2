@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Material 3 DayNight: one theme that switches between the light and dark colour
+        schemes with the system setting. Layouts only use theme attributes
+        (?attr/colorSurface, ?attr/colorPrimary, ...), so both modes look right.
+    -->
+    <style name="Base.Theme.LabAssignment2_CSE489" parent="Theme.Material3.DayNight.NoActionBar" />
+
+    <style name="Theme.LabAssignment2_CSE489" parent="Base.Theme.LabAssignment2_CSE489" />
+</resources>

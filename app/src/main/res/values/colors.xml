@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Videos are letterboxed on black in both light and dark mode. -->
+    <color name="video_background">#FF000000</color>
+    <color name="on_video_background">#FFFFFFFF</color>
+</resources>

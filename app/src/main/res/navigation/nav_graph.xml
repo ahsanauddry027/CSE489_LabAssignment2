@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The four drawer screens. They are all top-level destinations (see MainActivity), so each
+    one shows the hamburger icon and its android:label becomes the toolbar title.
+-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/broadcastFragment">
+
+    <fragment
+        android:id="@+id/broadcastFragment"
+        android:name="com.example.labassignment2_cse489.broadcast.BroadcastFragment"
+        android:label="@string/menu_broadcast"
+        tools:layout="@layout/fragment_broadcast" />
+
+    <fragment
+        android:id="@+id/imageScaleFragment"
+        android:name="com.example.labassignment2_cse489.image.ImageScaleFragment"
+        android:label="@string/menu_image_scale"
+        tools:layout="@layout/fragment_image_scale" />
+
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.labassignment2_cse489.video.VideoFragment"
+        android:label="@string/menu_video"
+        tools:layout="@layout/fragment_video" />
+
+    <fragment
+        android:id="@+id/audioFragment"
+        android:name="com.example.labassignment2_cse489.audio.AudioFragment"
+        android:label="@string/menu_audio"
+        tools:layout="@layout/fragment_audio" />
+</navigation>

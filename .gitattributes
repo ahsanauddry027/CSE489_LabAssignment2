@@ -1,0 +1,10 @@
+# Keep the Gradle wrapper scripts runnable on every OS.
+gradlew text eol=lf
+*.bat text eol=crlf
+
+# Binary files are never diffed or line-ending converted.
+*.jar binary
+*.png binary
+*.webp binary
+*.mp3 binary
+*.mp4 binary
