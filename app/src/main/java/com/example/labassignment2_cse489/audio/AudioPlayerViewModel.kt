@@ -141,7 +141,6 @@ class AudioPlayerViewModel(application: Application) : AndroidViewModel(applicat
     override fun onCleared() {
         stopProgressUpdates()
         player.release() // any state -> End
-        super.onCleared()
     }
 
     private companion object {
