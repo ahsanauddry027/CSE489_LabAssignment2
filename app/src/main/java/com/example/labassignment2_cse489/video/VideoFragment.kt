@@ -106,15 +106,25 @@ class VideoFragment : Fragment(R.layout.fragment_video) {
         if (viewModel.resumePlaying) {
             binding.videoView.start()
         } else {
-            // Show the controls until the user touches them, so the play button is obvious.
-            mediaController?.show(0)
+            // Briefly show the controls, so the play button is easy to find.
+            showControlsBriefly()
         }
     }
 
     private fun onVideoCompleted() {
         viewModel.onPlaybackCompleted()
         // VideoView hides the controls at the end; show them again so replay is one tap away.
-        mediaController?.show(0)
+        showControlsBriefly()
+    }
+
+    /**
+     * Shows the controls for MediaController's default few seconds. They are not pinned with
+     * show(0): the controller is a separate, focusable window, and while it is up the rest of
+     * the screen (toolbar, hamburger) cannot get keyboard focus. Tapping the video shows them
+     * again, and with TalkBack on MediaController ignores the timeout and keeps them visible.
+     */
+    private fun showControlsBriefly() {
+        mediaController?.show()
     }
 
     /** Shows a friendly message instead of the system "Can't play this video" dialog. */
