@@ -31,6 +31,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--
+            Activity 2 and Activity 3 of the broadcast flow. Only this app starts them, with
+            explicit Intents, so they are not exported. adjustResize makes the system send IME
+            insets, which Activity 2 uses to keep its text field above the keyboard.
+        -->
+        <activity
+            android:name=".broadcast.BroadcastInputActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".broadcast.CustomReceiverActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

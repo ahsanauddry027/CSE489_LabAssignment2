@@ -9,4 +9,54 @@
 
     <string name="drawer_header_title">CSE 489 · Assignment 2</string>
     <string name="drawer_header_subtitle">Mobile Application Development\nBRAC University</string>
+
+    <string name="navigate_up">Navigate up</string>
+
+    <!-- Broadcast Receiver, screen 1 -->
+    <string name="broadcast_select_label">Select a broadcast type</string>
+    <string name="broadcast_proceed">Proceed</string>
+    <string name="broadcast_custom_description">The next screen takes your text. The screen after it registers CustomMessageReceiver and receives the text through a custom broadcast.</string>
+    <string name="broadcast_battery_description">The next screen listens to the system broadcast Intent.ACTION_BATTERY_CHANGED and shows the live battery percentage.</string>
+
+    <!-- Broadcast Receiver, Activity 2 -->
+    <string name="title_custom_input">Custom broadcast</string>
+    <string name="title_battery_status">Battery status</string>
+    <string name="custom_input_intro">Type a message. It is passed to the next activity, which registers CustomMessageReceiver and then broadcasts your text to it.</string>
+    <string name="custom_input_hint">Message to broadcast</string>
+    <string name="custom_input_send">Send to receiver</string>
+    <string name="error_blank_message">Please type a message first</string>
+
+    <string name="battery_percent">%1$d%%</string>
+    <string name="battery_percent_unknown">—</string>
+    <string name="battery_indicator_description">Battery level</string>
+    <string name="battery_status_label">Status: %1$s</string>
+    <string name="battery_status_charging">Charging</string>
+    <string name="battery_status_discharging">Discharging</string>
+    <string name="battery_status_full">Full</string>
+    <string name="battery_status_not_charging">Not charging</string>
+    <string name="battery_status_unknown">Unknown</string>
+    <string name="battery_last_update">Last update: %1$s</string>
+    <string name="battery_listening_note">This screen listens for Intent.ACTION_BATTERY_CHANGED only while it is visible. Plug in or unplug the charger (or use the emulator\'s battery controls) to see the values change.</string>
+    <string name="battery_next">Next</string>
+
+    <!-- Broadcast Receiver, Activity 3 -->
+    <string name="title_custom_receiver">Custom broadcast receiver</string>
+    <string name="title_battery_receiver">Battery notification receiver</string>
+    <string name="receiver_status_heading">Receiver status</string>
+    <string name="receiver_registered">CustomMessageReceiver is registered</string>
+    <string name="receiver_not_registered">CustomMessageReceiver is not registered</string>
+    <string name="receiver_action">Action: %1$s</string>
+    <string name="received_heading">Received message</string>
+    <string name="received_waiting">Waiting for the broadcast…</string>
+    <string name="received_message">Received via broadcast: %1$s</string>
+    <plurals name="received_meta">
+        <item quantity="one">at %1$s · %2$d broadcast received</item>
+        <item quantity="other">at %1$s · %2$d broadcasts received</item>
+    </plurals>
+    <string name="received_toast">Received via broadcast: %1$s</string>
+    <string name="broadcast_again">Broadcast again</string>
+    <string name="receiver_why_heading">Why does this screen send the broadcast?</string>
+    <string name="receiver_why_body">Your text reached this activity inside the Intent that started it. A broadcast sent by the previous screen would have been lost, because this receiver did not exist yet at that moment. So this activity first registers CustomMessageReceiver and then broadcasts the text to it.</string>
+    <string name="battery_nothing_heading">Nothing to do here</string>
+    <string name="battery_nothing_body">For the battery option this activity does nothing, as the assignment asks: no receiver is registered on this screen. The live battery percentage is on the previous screen.</string>
 </resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spinner items of the Broadcast Receiver screen, in the same order as BroadcastMode. -->
+    <string-array name="broadcast_types">
+        <item>Custom broadcast receiver</item>
+        <item>System battery notification receiver</item>
+    </string-array>
+</resources>
