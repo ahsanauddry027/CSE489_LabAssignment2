@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Landscape phones are short, so the battery ring shrinks to keep more on screen. -->
+    <!-- Landscape phones are short: the battery ring shrinks to leave room for its details. -->
     <dimen name="battery_indicator_size">140dp</dimen>
+    <!-- The audio artwork sits beside the controls in landscape, so it can stay large. -->
+    <dimen name="audio_artwork_size">180dp</dimen>
+    <dimen name="audio_artwork_icon_size">80dp</dimen>
 </resources>

@@ -72,6 +72,19 @@
     <string name="video_title">Sintel (trailer)</string>
     <string name="video_details">© Blender Foundation · CC BY 3.0 · Tap the video to show or hide the controls.</string>
 
+    <!-- Audio -->
+    <string name="audio_track_title">SoundHelix Song 1</string>
+    <string name="audio_track_artist">T. Schürger · SoundHelix</string>
+    <string name="audio_play">Play</string>
+    <string name="audio_pause">Pause</string>
+    <string name="audio_stop">Stop</string>
+    <string name="audio_seek_description">Playback position</string>
+    <string name="audio_preparing">Preparing the track…</string>
+    <string name="audio_ready">Ready to play</string>
+    <string name="audio_playing">Playing</string>
+    <string name="audio_paused">Paused</string>
+    <string name="audio_error">Sorry, this track can\'t be played.</string>
+
     <string name="battery_nothing_heading">Nothing to do here</string>
     <string name="battery_nothing_body">For the battery option this activity does nothing, as the assignment asks: no receiver is registered on this screen. The live battery percentage is on the previous screen.</string>
 </resources>
