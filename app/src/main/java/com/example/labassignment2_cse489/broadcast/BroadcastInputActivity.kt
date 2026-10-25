@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.KeyEvent
 import android.view.inputmethod.EditorInfo
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -59,12 +60,19 @@ class BroadcastInputActivity : AppCompatActivity() {
         // Clear the "blank message" error as soon as the user types again.
         content.messageInput.doAfterTextChanged { content.messageLayout.error = null }
         // The keyboard's Send action does the same as the button.
-        content.messageInput.setOnEditorActionListener { _, actionId, _ ->
-            if (actionId == EditorInfo.IME_ACTION_SEND) {
-                sendMessage()
-                true
-            } else {
-                false
+        content.messageInput.setOnEditorActionListener { _, actionId, event ->
+            when {
+                actionId == EditorInfo.IME_ACTION_SEND -> {
+                    sendMessage()
+                    true
+                }
+                // A hardware keyboard's Enter key arrives as IME_NULL plus the key event
+                // (once for key down, once for key up): send once, consume both.
+                actionId == EditorInfo.IME_NULL && event?.keyCode == KeyEvent.KEYCODE_ENTER -> {
+                    if (event.action == KeyEvent.ACTION_DOWN) sendMessage()
+                    true
+                }
+                else -> false
             }
         }
         content.sendButton.setOnClickListener { sendMessage() }

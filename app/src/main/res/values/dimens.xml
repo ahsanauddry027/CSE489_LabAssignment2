@@ -15,6 +15,11 @@
 
     <dimen name="icon_large">48dp</dimen>
 
+    <!-- Small labels drawn over the picture on the Image Scale screen. -->
+    <dimen name="overlay_corner_radius">16dp</dimen>
+    <dimen name="overlay_padding_horizontal">12dp</dimen>
+    <dimen name="overlay_padding_vertical">6dp</dimen>
+
     <!-- Battery screen (smaller in landscape, see values-land/dimens.xml). -->
     <dimen name="battery_indicator_size">200dp</dimen>
     <dimen name="battery_indicator_thickness">12dp</dimen>

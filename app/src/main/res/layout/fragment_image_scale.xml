@@ -1,4 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Image Scale: the zoomable picture with small overlays for the zoom level and the hint. -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    tools:context=".image.ImageScaleFragment">
+
+    <com.example.labassignment2_cse489.image.ZoomableImageView
+        android:id="@+id/zoomable_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image_content_description" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/image_loading"
+        android:indeterminate="true" />
+
+    <LinearLayout
+        android:id="@+id/error_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/image_error"
+            android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+        <Button
+            android:id="@+id/retry_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:text="@string/image_retry" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/zoom_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/spacing_medium"
+        android:background="@drawable/bg_overlay_pill"
+        android:paddingStart="@dimen/overlay_padding_horizontal"
+        android:paddingTop="@dimen/overlay_padding_vertical"
+        android:paddingEnd="@dimen/overlay_padding_horizontal"
+        android:paddingBottom="@dimen/overlay_padding_vertical"
+        android:textAppearance="?attr/textAppearanceLabelLarge"
+        android:textColor="?attr/colorOnSecondaryContainer"
+        android:visibility="gone"
+        tools:text="2.4x"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/zoom_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="@dimen/spacing_medium"
+        android:background="@drawable/bg_overlay_pill"
+        android:paddingStart="@dimen/overlay_padding_horizontal"
+        android:paddingTop="@dimen/overlay_padding_vertical"
+        android:paddingEnd="@dimen/overlay_padding_horizontal"
+        android:paddingBottom="@dimen/overlay_padding_vertical"
+        android:text="@string/image_zoom_hint"
+        android:textAppearance="?attr/textAppearanceLabelLarge"
+        android:textColor="?attr/colorOnSecondaryContainer"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</FrameLayout>
