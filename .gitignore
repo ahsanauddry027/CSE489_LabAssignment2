@@ -13,6 +13,3 @@ local.properties
 *.iml
 /.idea/
 .DS_Store
-
-# The assignment brief is not part of the submitted source
-/*.pdf
