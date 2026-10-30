@@ -1,0 +1,123 @@
+============================================================
+           AI USAGE DECLARATION
+============================================================
+
+Name:
+Student ID:
+Assignment: CSE 489 Assignment 2 (Fragments, Navigation
+            Drawer and Jetpack)
+Date:       30 October 2026
+
+------------------------------------------------------------
+1. AI TOOLS USED (check all that apply)
+------------------------------------------------------------
+[ ] None
+[ ] ChatGPT
+[ ] GitHub Copilot
+[ ] Google Gemini
+[x] Claude
+[ ] Cursor
+[ ] Other: ________________
+
+------------------------------------------------------------
+2. PURPOSE OF AI USE (check all that apply)
+------------------------------------------------------------
+[x] Learning/understanding concepts
+[x] Debugging my code
+[x] Generating code snippets
+[x] Writing text content
+[x] Design/styling ideas
+[ ] Image generation
+[x] Other: Generating complete source files and tests
+
+------------------------------------------------------------
+3. DESCRIPTION OF AI USE
+------------------------------------------------------------
+Briefly describe what you used AI for and how:
+
+Claude (Anthropic), used through Claude Code in VS Code,
+built this project from the assignment brief. It wrote the
+Kotlin code, the XML layouts and resources, the Gradle
+setup, and the unit and Espresso tests. It also fixed lint
+warnings and a video-controls focus bug, and wrote
+README.md, PROJECT_GUIDE.md, the English and Bangla
+explainer PDFs and the commit messages. Every commit in the
+git history (25-28 October 2026) is marked
+"Co-Authored-By: Claude".
+
+I then used ChatGPT only to learn the concepts behind the
+code. Claude wrote a set of 7 short prompts for me that
+tell ChatGPT not to write any code. They cover the app's
+Android architecture and build order; the navigation
+drawer and the Navigation component; ViewModel, LiveData,
+StateFlow and SavedStateHandle across rotation and process
+death; the Spinner, explicit Intents and the sticky
+battery broadcast; the custom receiver in Activity 3;
+touch events, ScaleGestureDetector and the image Matrix;
+and MediaPlayer for video and audio, ending with viva
+practice questions.
+
+------------------------------------------------------------
+4. AI-ASSISTED SECTIONS
+------------------------------------------------------------
+List specific files/sections where AI helped significantly:
+
+Claude wrote all of the files below. Kotlin paths are under
+app/src/main/java/com/example/labassignment2_cse489/.
+ChatGPT output is not in any file; it was used only for
+understanding.
+
+File:    MainActivity.kt, res/layout/activity_main.xml,
+         res/navigation/nav_graph.xml,
+         res/menu/drawer_menu.xml
+Section: Navigation drawer and app shell
+
+File:    broadcast/ (all 10 files) and their layouts
+Section: A. Broadcast Receiver: Screen 1, Activity 2,
+         Activity 3, custom and battery receivers
+
+File:    image/ (all 4 files), fragment_image_scale.xml
+Section: B. Image Scale: Coil loading, pinch zoom, pan,
+         double-tap
+
+File:    video/ (both files), fragment_video.xml
+Section: C. Video: VideoView and MediaController
+
+File:    audio/ (both files), fragment_audio.xml (+ land)
+Section: D. Audio: MediaPlayer player screen
+
+File:    util/WindowInsetsExt.kt, util/TimeFormat.kt
+Section: Edge-to-edge insets, mm:ss and clock formatting
+
+File:    app/src/main/res/ (layouts, values, drawables)
+Section: Screen UI, strings, themes, landscape layouts
+
+File:    AndroidManifest.xml, app/build.gradle.kts,
+         gradle/libs.versions.toml
+Section: Project setup, permissions and dependencies
+
+File:    app/src/test/, app/src/androidTest/
+Section: Unit tests and Espresso instrumented tests
+
+File:    README.md, PROJECT_GUIDE.md, docs/images/
+Section: Documentation and screenshots
+
+File:    CSE489_Assignment2_Explained.pdf,
+         CSE489_Assignment2_Explained_Bangla.pdf
+Section: English and Bangla explainers
+
+------------------------------------------------------------
+5. DECLARATION
+------------------------------------------------------------
+I declare that:
+- This disclosure is complete and accurate
+- I understand all code in my submission
+- I can explain and modify my work if asked
+- I take full responsibility for my submission
+
+Signature: _______________________
+Date: ___________________________
+
+============================================================
+Save as: docs/AI_Declaration.txt
+============================================================
